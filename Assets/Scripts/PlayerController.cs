@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
     void PlayerJump()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
